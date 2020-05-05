@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite3]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test3(failed)(failed)">
+    <classes>
+      <class name="com.stock.qa.testcases.ReturnMaterialTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="Verify_ReturnMaterial_Functionality_Test"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.stock.qa.testcases.ReturnMaterialTest -->
+      <class name="com.stock.qa.testcases.DispatchMaterialTest">
+        <methods>
+          <include name="Verify_DispatchMaterial_Functionality_Test"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.stock.qa.testcases.DispatchMaterialTest -->
+      <class name="com.stock.qa.testcases.PurchaseMaterialTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="Verify_Purchasematerial_functionality_Test"/>
+        </methods>
+      </class> <!-- com.stock.qa.testcases.PurchaseMaterialTest -->
+      <class name="com.stock.qa.testcases.AddSiteTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Verify_AddsiteFunctionality_Test"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.stock.qa.testcases.AddSiteTest -->
+    </classes>
+  </test> <!-- Test3(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite3]] -->

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-02T14:45:54 IST" name="Default suite" finished-at="2020-03-02T14:46:32 IST" duration-ms="38563">
+    <groups>
+    </groups>
+    <test started-at="2020-03-02T14:45:54 IST" name="Default test" finished-at="2020-03-02T14:46:32 IST" duration-ms="38563">
+      <class name="com.stock.qa.testcases.SiteEstimateTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.stock.qa.testcases.SiteEstimateTest@4df50bcc]" started-at="2020-03-02T14:45:54 IST" name="Setup" finished-at="2020-03-02T14:46:06 IST" duration-ms="11661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="verify_SiteEstimateTitle()[pri:1, instance:com.stock.qa.testcases.SiteEstimateTest@4df50bcc]" started-at="2020-03-02T14:46:06 IST" name="verify_SiteEstimateTitle" finished-at="2020-03-02T14:46:12 IST" duration-ms="6644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SiteEstimateTitle -->
+        <test-method signature="Verify_SiteEstimate_Functionality_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.stock.qa.testcases.SiteEstimateTest@4df50bcc]" started-at="2020-03-02T14:46:24 IST" name="Verify_SiteEstimate_Functionality_Test" data-provider="getTestData" finished-at="2020-03-02T14:46:27 IST" duration-ms="2924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hadapsar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[HP]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qty]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_SiteEstimate_Functionality_Test -->
+        <test-method signature="Verify_SiteEstimate_Functionality_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.stock.qa.testcases.SiteEstimateTest@4df50bcc]" started-at="2020-03-02T14:46:27 IST" name="Verify_SiteEstimate_Functionality_Test" data-provider="getTestData" finished-at="2020-03-02T14:46:30 IST" duration-ms="2614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[baner]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LG]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qty]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_SiteEstimate_Functionality_Test -->
+        <test-method signature="Verify_SiteEstimate_Functionality_Test(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.stock.qa.testcases.SiteEstimateTest@4df50bcc]" started-at="2020-03-02T14:46:30 IST" name="Verify_SiteEstimate_Functionality_Test" data-provider="getTestData" finished-at="2020-03-02T14:46:32 IST" duration-ms="2545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bavdhan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sonata]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Qty]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_SiteEstimate_Functionality_Test -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.stock.qa.testcases.SiteEstimateTest@4df50bcc]" started-at="2020-03-02T14:46:33 IST" name="TearDown" finished-at="2020-03-02T14:46:33 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.stock.qa.testcases.SiteEstimateTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

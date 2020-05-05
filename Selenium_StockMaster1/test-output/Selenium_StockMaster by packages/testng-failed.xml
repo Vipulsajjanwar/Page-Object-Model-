@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium_StockMaster by packages]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="com.stock.qa.testcases(failed)">
+    <classes>
+      <class name="com.stock.qa.testcases.AddProductCategoryTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verify_Addproductcategory_Test"/>
+          <include name="setUp"/>
+          <include name="verify_Addproduct_Category_TitleNameTest"/>
+        </methods>
+      </class> <!-- com.stock.qa.testcases.AddProductCategoryTest -->
+      <class name="com.stock.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifySettingsLinkTest"/>
+        </methods>
+      </class> <!-- com.stock.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- com.stock.qa.testcases(failed) -->
+</suite> <!-- Failed suite [Selenium_StockMaster by packages] -->

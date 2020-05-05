@@ -1,0 +1,409 @@
+<html>
+<head>
+<title>TestNG:  All_TestCases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All_TestCases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 02 14:08:30 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>524 seconds (524871 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.stock.qa.testcases.DispatchMaterialTest.Verify_DispatchMaterial_Functionality_Test()'><b>Verify_DispatchMaterial_Functionality_Test</b><br>Test class: com.stock.qa.testcases.DispatchMaterialTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIPUL&apos;, ip: &apos;192.168.0.28&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vips\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64759}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e6ddc5b10dcb928a08a499cd3088165f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at com.stock.qa.pages.DispatchMaterial.Verify_Dispatch_Functionality(DispatchMaterial.java:38)
+	at com.stock.qa.testcases.DispatchMaterialTest.Verify_DispatchMaterial_Functionality_Test(DispatchMaterialTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1821205386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1821205386'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIPUL&apos;, ip: &apos;192.168.0.28&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vips\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64759}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e6ddc5b10dcb928a08a499cd3088165f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at com.stock.qa.pages.DispatchMaterial.Verify_Dispatch_Functionality(DispatchMaterial.java:38)
+	at com.stock.qa.testcases.DispatchMaterialTest.Verify_DispatchMaterial_Functionality_Test(DispatchMaterialTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.stock.qa.testcases.DispatchMaterialTest@5c909414</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.ReturnMaterialTest.Verify_ReturnMaterial_Functionality_Test()'><b>Verify_ReturnMaterial_Functionality_Test</b><br>Test class: com.stock.qa.testcases.ReturnMaterialTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIPUL&apos;, ip: &apos;192.168.0.28&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vips\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 22983ed58339a3d046c9b124f8af99c2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at com.stock.qa.pages.ReturnMaterial.Verify_returnMaterial_functionality(ReturnMaterial.java:45)
+	at com.stock.qa.testcases.ReturnMaterialTest.Verify_ReturnMaterial_Functionality_Test(ReturnMaterialTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1731593711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1731593711'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=80.0.3987.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIPUL&apos;, ip: &apos;192.168.0.28&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vips\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 22983ed58339a3d046c9b124f8af99c2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at com.stock.qa.pages.ReturnMaterial.Verify_returnMaterial_functionality(ReturnMaterial.java:45)
+	at com.stock.qa.testcases.ReturnMaterialTest.Verify_ReturnMaterial_Functionality_Test(ReturnMaterialTest.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>com.stock.qa.testcases.ReturnMaterialTest@4b14c583</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductTest.Verify_AddProduct_Functionality_Test()'><b>Verify_AddProduct_Functionality_Test</b><br>Test class: com.stock.qa.testcases.AddProductTest<br>Parameters: Laptop, HP, 1234.0, U-12, 10.0, 10.0</td>
+<td></td>
+<td>8</td>
+<td>com.stock.qa.testcases.AddProductTest@48aaecc3</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductTest.Verify_AddProduct_Functionality_Test()'><b>Verify_AddProduct_Functionality_Test</b><br>Test class: com.stock.qa.testcases.AddProductTest<br>Parameters: TV, LG, 123456.0, Amazon, 11.0, 11.0</td>
+<td></td>
+<td>8</td>
+<td>com.stock.qa.testcases.AddProductTest@48aaecc3</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductTest.Verify_AddProduct_Functionality_Test()'><b>Verify_AddProduct_Functionality_Test</b><br>Test class: com.stock.qa.testcases.AddProductTest<br>Parameters: Watches, Sonata, 1234567.0, Ebay, 12.0, 12.0</td>
+<td></td>
+<td>5</td>
+<td>com.stock.qa.testcases.AddProductTest@48aaecc3</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddSiteTest.Verify_AddSitetitleName_Test()'><b>Verify_AddSitetitleName_Test</b><br>Test class: com.stock.qa.testcases.AddSiteTest</td>
+<td></td>
+<td>4</td>
+<td>com.stock.qa.testcases.AddSiteTest@5cee5251</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddSupervisorTest.Verify_AddSupervisorFunctionality_Test()'><b>Verify_AddSupervisorFunctionality_Test</b><br>Test class: com.stock.qa.testcases.AddSupervisorTest<br>Parameters: vipul, hadapsar, vipul@rediffmail.com, 1234567890, 1234567899, 123456789012, asdfa1212a</td>
+<td></td>
+<td>5</td>
+<td>com.stock.qa.testcases.AddSupervisorTest@7adda9cc</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddSupervisorTest.Verify_AddSupervisorTitleName_Test()'><b>Verify_AddSupervisorTitleName_Test</b><br>Test class: com.stock.qa.testcases.AddSupervisorTest</td>
+<td></td>
+<td>4</td>
+<td>com.stock.qa.testcases.AddSupervisorTest@7adda9cc</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductCategoryTest.Verify_Addproduct_Category_TitleNameTest()'><b>Verify_Addproduct_Category_TitleNameTest</b><br>Test class: com.stock.qa.testcases.AddProductCategoryTest</td>
+<td></td>
+<td>12</td>
+<td>com.stock.qa.testcases.AddProductCategoryTest@60d8c9b7</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductCategoryTest.Verify_Addproductcategory_Test()'><b>Verify_Addproductcategory_Test</b><br>Test class: com.stock.qa.testcases.AddProductCategoryTest<br>Parameters: Laptop</td>
+<td></td>
+<td>12</td>
+<td>com.stock.qa.testcases.AddProductCategoryTest@60d8c9b7</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductCategoryTest.Verify_Addproductcategory_Test()'><b>Verify_Addproductcategory_Test</b><br>Test class: com.stock.qa.testcases.AddProductCategoryTest<br>Parameters: TV</td>
+<td></td>
+<td>16</td>
+<td>com.stock.qa.testcases.AddProductCategoryTest@60d8c9b7</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductCategoryTest.Verify_Addproductcategory_Test()'><b>Verify_Addproductcategory_Test</b><br>Test class: com.stock.qa.testcases.AddProductCategoryTest<br>Parameters: Watches</td>
+<td></td>
+<td>14</td>
+<td>com.stock.qa.testcases.AddProductCategoryTest@60d8c9b7</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductTest.Verify_AddproducttitleName_Test()'><b>Verify_AddproducttitleName_Test</b><br>Test class: com.stock.qa.testcases.AddProductTest</td>
+<td></td>
+<td>6</td>
+<td>com.stock.qa.testcases.AddProductTest@48aaecc3</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddSuppliersTest.Verify_AddproducttitleName_Test()'><b>Verify_AddproducttitleName_Test</b><br>Test class: com.stock.qa.testcases.AddSuppliersTest</td>
+<td></td>
+<td>5</td>
+<td>com.stock.qa.testcases.AddSuppliersTest@7c0c77c7</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.ReturnMaterialTest.Verify_AddproducttitleName_Test()'><b>Verify_AddproducttitleName_Test</b><br>Test class: com.stock.qa.testcases.ReturnMaterialTest</td>
+<td></td>
+<td>1</td>
+<td>com.stock.qa.testcases.ReturnMaterialTest@4b14c583</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddSiteTest.Verify_AddsiteFunctionality_Test()'><b>Verify_AddsiteFunctionality_Test</b><br>Test class: com.stock.qa.testcases.AddSiteTest<br>Parameters: Hadapsar, vipul@gmail.com, 1.23456789E9, vipul, 1.23456789E9</td>
+<td></td>
+<td>7</td>
+<td>com.stock.qa.testcases.AddSiteTest@5cee5251</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddSiteTest.Verify_AddsiteFunctionality_Test()'><b>Verify_AddsiteFunctionality_Test</b><br>Test class: com.stock.qa.testcases.AddSiteTest<br>Parameters: Baner, Baner@yahoo.com, 1.234555555E9, sudhir, 1.234321233E9</td>
+<td></td>
+<td>6</td>
+<td>com.stock.qa.testcases.AddSiteTest@5cee5251</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddSiteTest.Verify_AddsiteFunctionality_Test()'><b>Verify_AddsiteFunctionality_Test</b><br>Test class: com.stock.qa.testcases.AddSiteTest<br>Parameters: Bavdhan, bavdhan@redifmail.com, 1.234565432E9, kishor, 1.234567893E9</td>
+<td></td>
+<td>9</td>
+<td>com.stock.qa.testcases.AddSiteTest@5cee5251</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddSuppliersTest.Verify_Addsupplier_Functionality_Test()'><b>Verify_Addsupplier_Functionality_Test</b><br>Test class: com.stock.qa.testcases.AddSuppliersTest<br>Parameters: vipul, hadapsar, vipul@rediffmail.com, 1234567890, vips, 11asdfs1234a1z2, 123456789012, asdfa1212a</td>
+<td></td>
+<td>5</td>
+<td>com.stock.qa.testcases.AddSuppliersTest@7c0c77c7</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.HomePageTest.Verify_CorrectCompanyLogo_Test()'><b>Verify_CorrectCompanyLogo_Test</b><br>Test class: com.stock.qa.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.stock.qa.testcases.HomePageTest@20d28811</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.HomePageTest.Verify_DispatchMaterialLink_Test()'><b>Verify_DispatchMaterialLink_Test</b><br>Test class: com.stock.qa.testcases.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.stock.qa.testcases.HomePageTest@20d28811</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.DispatchMaterialTest.Verify_DispatchMaterialTitleName_Test()'><b>Verify_DispatchMaterialTitleName_Test</b><br>Test class: com.stock.qa.testcases.DispatchMaterialTest</td>
+<td></td>
+<td>4</td>
+<td>com.stock.qa.testcases.DispatchMaterialTest@5c909414</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.HomePageTest.Verify_HomePageTitle_Test()'><b>Verify_HomePageTitle_Test</b><br>Test class: com.stock.qa.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.stock.qa.testcases.HomePageTest@20d28811</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.LoginTestCase.Verify_LoginPageTitle_Test()'><b>Verify_LoginPageTitle_Test</b><br>Test class: com.stock.qa.testcases.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.stock.qa.testcases.LoginTestCase@3cc2931c</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.HomePageTest.Verify_LogoutBtn_Test()'><b>Verify_LogoutBtn_Test</b><br>Test class: com.stock.qa.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.stock.qa.testcases.HomePageTest@20d28811</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.PurchaseMaterialTest.Verify_Purchasematerial_Titlename_Test()'><b>Verify_Purchasematerial_Titlename_Test</b><br>Test class: com.stock.qa.testcases.PurchaseMaterialTest</td>
+<td></td>
+<td>2</td>
+<td>com.stock.qa.testcases.PurchaseMaterialTest@433d61fb</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.PurchaseMaterialTest.Verify_Purchasematerial_functionality_Test()'><b>Verify_Purchasematerial_functionality_Test</b><br>Test class: com.stock.qa.testcases.PurchaseMaterialTest</td>
+<td></td>
+<td>9</td>
+<td>com.stock.qa.testcases.PurchaseMaterialTest@433d61fb</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.HomePageTest.Verify_ReturnMaterialLink_Test()'><b>Verify_ReturnMaterialLink_Test</b><br>Test class: com.stock.qa.testcases.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.stock.qa.testcases.HomePageTest@20d28811</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.Setting_test.Verify_Setting_Test()'><b>Verify_Setting_Test</b><br>Test class: com.stock.qa.testcases.Setting_test</td>
+<td></td>
+<td>1</td>
+<td>com.stock.qa.testcases.Setting_test@3967e60c</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.HomePageTest.Verify_SettingsLink_Test()'><b>Verify_SettingsLink_Test</b><br>Test class: com.stock.qa.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.stock.qa.testcases.HomePageTest@20d28811</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.AddProductCategoryTest.Verify_Settings_Test()'><b>Verify_Settings_Test</b><br>Test class: com.stock.qa.testcases.AddProductCategoryTest</td>
+<td></td>
+<td>1</td>
+<td>com.stock.qa.testcases.AddProductCategoryTest@60d8c9b7</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.HomePageTest.Verify_SiteEstimateLink_Test()'><b>Verify_SiteEstimateLink_Test</b><br>Test class: com.stock.qa.testcases.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.stock.qa.testcases.HomePageTest@20d28811</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.LoginTestCase.Verify_StockLogoImage_Test()'><b>Verify_StockLogoImage_Test</b><br>Test class: com.stock.qa.testcases.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>com.stock.qa.testcases.LoginTestCase@3cc2931c</td></tr>
+<tr>
+<td title='com.stock.qa.testcases.LoginTestCase.Verify_login_Test()'><b>Verify_login_Test</b><br>Test class: com.stock.qa.testcases.LoginTestCase</td>
+<td></td>
+<td>2</td>
+<td>com.stock.qa.testcases.LoginTestCase@3cc2931c</td></tr>
+</table><p>
+</body>
+</html>

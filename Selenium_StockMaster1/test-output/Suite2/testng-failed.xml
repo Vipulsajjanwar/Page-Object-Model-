@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="com.stock.qa.testcases.AddSuppliersTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Verify_Addsupplier_Functionality_Test"/>
+          <include name="Verify_AddproducttitleName_Test"/>
+        </methods>
+      </class> <!-- com.stock.qa.testcases.AddSuppliersTest -->
+      <class name="com.stock.qa.testcases.AddSupervisorTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="Verify_AddSupervisorTitleName_Test"/>
+          <include name="Verify_AddSupervisorFunctionality_Test"/>
+        </methods>
+      </class> <!-- com.stock.qa.testcases.AddSupervisorTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite2] -->
